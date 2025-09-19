@@ -8,6 +8,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.IO;
 
 namespace Projekt1
 {
@@ -25,6 +26,14 @@ namespace Projekt1
            string tekst1 = jeden.Text;
 
            dwa.Text = tekst1;
+        }
+
+        private void Zapisz(object sender, RoutedEventArgs e)
+        {
+            string tekst = jeden.Text;
+            // File.WriteAllText("log.txt", tekst);
+            File.AppendAllText("log.txt", tekst);
+
         }
     }
 }

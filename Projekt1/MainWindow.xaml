@@ -9,6 +9,8 @@
     <Grid>
         <TextBox x:Name="jeden" Margin="0,95,405,299"/>
         <TextBox x:Name="dwa" Margin="400,95,0,299"/>
-        <Button Content="Przycisk" Click="Akcja" Margin="280,188,280,188"/>
+        <Button Content="Przycisk" Click="Akcja" Margin="78,183,482,193"/>
+        <Button Content="Zapisz" Click="Zapisz" Margin="480,188,80,188"/>
+
     </Grid>
 </Window>
